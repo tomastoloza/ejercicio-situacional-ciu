@@ -2,25 +2,28 @@ p, label, button {
     font-family: 'Oswald', sans-serif;
 }
 
-body{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
 }
 
 .login {
+    padding: 20px;
     width: 400px;
     height: 300px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.login-page {
+    margin-bottom: 50%;
+}
+
 #title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
 input {
@@ -29,23 +32,30 @@ input {
 
 .input-box {
     margin: 4px;
+    height: 75px;
 }
 
-.input-box input{
+.input-box input[type=text], input[type=password] {
+    background-color: #c9c9c9;
+}
+
+
+.input-box input {
     padding: 8px;
     border: none;
     width: 250px;
     border-radius: 4px;
-    background-color: #c9c9c9;
 }
 
-button:hover {
-    background-color: #c78e15;
-}
-
-.submit {
+.input-box input[type=submit] {
     background-color: #ffd400;
     text-align: center;
+    transition: 0.3s;
+}
+
+.input-box input[type=submit]:hover {
+    background-color: #ffb700;
+    transition: 0.3s;
 }
 
 a {
@@ -59,8 +69,8 @@ a {
 /*var amarillo = #ffd400*/
 
 html {
-    background: rgb(255,212,0);
-    background: radial-gradient(circle, rgba(255,212,0,0.35) 0%, rgba(15,174,232,0.35) 100%);
+    background: rgb(255, 212, 0);
+    background: radial-gradient(circle, rgba(255, 212, 0, 0.35) 0%, rgba(15, 174, 232, 0.35) 100%);
 }
 
 #nav ul {
@@ -68,11 +78,19 @@ html {
     list-style-type: none;
 }
 
-#nav button{
-    border: 1px;
-    padding: 20px;
+#nav button {
+    padding: 8px;
+    border: none;
+    width: 100px;
     border-radius: 4px;
     background-color: #ffd400;
+    transition: 0.3s;
+
+}
+
+#nav button:hover {
+    background-color: #ffb700;
+    transition: 0.3s;
 }
 
 #nav {
@@ -88,6 +106,12 @@ html {
     margin: 50px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .descuento {
@@ -115,12 +139,17 @@ html {
     font-size: 24px;
 }
 
-#footer{
+#footer {
     margin-right: 50%;
     margin-left: 50%;
 }
-#footer p{
+
+#footer p {
     width: 100px;
 }
 
-/*TODO: Cambiar font-family p*/
+#logo {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}

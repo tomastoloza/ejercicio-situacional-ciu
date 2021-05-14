@@ -10,22 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
+<div id="logo">
+    <img src="https://www.buenosaires.gob.ar/sites/gcaba/themes/gcbaV4/xgcaba/css/BA2016.png" alt="">
+</div>
+<div id="login-page">
     <div class="login">
         <form name="login" onsubmit="return checkCredentials()" action="pagina-principal.html">
             <h1 id="title">Iniciar sesión</h1>
             <div class="input-box">
                 <label for="dni">DNI</label>
                 <br>
-                <input name="DNI" type="text" placeholder="12345678" required class="" id="dni">
+                <input name="DNI" type="text" placeholder="12345678" required id="dni">
             </div>
             <div class="input-box">
                 <label for="password">Contraseña</label>
                 <br>
-                <input name="Contraseña" type="password" placeholder="********" required
-                       class="" id="password">
+                <input name="Contraseña" type="password" placeholder="********" required id="password">
             </div>
             <div class="input-box">
+                <br>
                 <input type="submit" class="submit" value="Entrar">
             </div>
         </form>

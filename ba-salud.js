@@ -7,7 +7,10 @@ function checkCredentials() {
 
 function placeDniUsuario() {
     const urlParams = new URLSearchParams(window.location.search);
-    document.getElementById("nombre-usuario").innerHTML = `DNI: ${urlParams.get("DNI")}`
+    let dni = urlParams.get("DNI");
+    if (dni != null) {
+        document.getElementById("nombre-usuario").innerHTML = `DNI: ${dni}`
+    }
 
 }
 
