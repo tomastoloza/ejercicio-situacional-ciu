@@ -1,7 +1,7 @@
 
 
 
-## Ejercicio situacional - [Pagina web](https://tomastoloza.github.io/ejercicio-situacional-ciu)
+## Ejercicio situacional - [Pagina web](https://tomastoloza.github.io/ejercicio-situacional-ciu/)
 
 #### Cliente: 
 
